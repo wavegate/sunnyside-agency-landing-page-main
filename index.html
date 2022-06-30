@@ -13,53 +13,128 @@
 </head>
 
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <nav>
+    <img src="images/logo.svg" alt="logo" class="nav__logo">
+    <ul class="nav__list">
+      <li class="nav__list_item">About</li>
+      <li class="nav__list_item">Services</li>
+      <li class="nav__list_item">Projects</li>
+      <li class="nav__list_item nav__list_item--contact">Contact</li>
+    </ul>
+    <button class="nav__button" aria-label="Open Menu"></button>
+  </nav>
+  <header>
+    <h1 class="header__heading">We are creatives</h1>
+    <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="header__arrow">
+  </header>
 
-  We are creatives
+  <article>
+      <div class="article__text_container">
+        <div class="article__text">
+          <h1 class="article__heading">Transform your brand</h1>
+          <p class="article__paragraph">
+            We are a full-service creative agency specializing in helping brands grow fast.
+              Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <button class="article__button">Learn more</button>
+        </div>
+      </div>
+  <div class="article__image_container">
+    <img src="images/desktop/image-transform.jpg" alt="image-transform" class="article__image"></div>
+  </article>
 
-  Transform your brand
+  <article class="article article--stand_out">
+    <div class="article__text_container article__text_container--stand_out">
+      <div class="article__text">
+        <h1 class="article__heading">Stand out to the right audience</h1>
+        <p class="article__paragraph">
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build
+          and extend your brand in digital places.
+        </p>
+        <button class="article__button article__button--stand_out">Learn more</button>
+      </div>
+    </div>
+    <div class="article__image_container article__image_container--stand_out">
+      <img src="images/desktop/image-stand-out.jpg" alt="image-stand-out" class="article__image"></div>
+  </article>
 
-  We are a full-service creative agency specializing in helping brands grow fast.
-  Engage your clients through compelling visuals that do most of the marketing for you.
+  <article class="article article--block">
+    <div class="article__image_container article__image_container--graphic_design">
+      <div class="article__image article__image--graphic_design">
+        <div class="article__text article__text--block">
+          <h1 class="article__heading article__heading--block">Graphic design</h1>
+          <p class="article__paragraph article__paragraph--block">
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
+            clients’ attention.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="article__image_container article__image_container--photography">
+      <div class="article__image article__image--photography">
+        <div class="article__text article__text--block">
+          <h1 class="article__heading article__heading--block">Photography</h1>
+            <p class="article__paragraph article__paragraph--block">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </div>
+    </div>
+  </article>
 
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build
-  and extend your brand in digital places.
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
-  clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable
-  experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
+  <section class="testimonials">
+    <div class="testimonials__container">
+      <h1 class="testimonials__heading">Client testimonials</h1>
+      <div class="testimonials__card_row">
+        <div class="testimonials__card">
+          <img src="images/image-emily.jpg" alt="image-emily" class="testimonials__image">
+          <p class="testimonials__paragraph">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <div class="testimonials__author">
+            <div class="testimonials__name">Emily R.</div>
+            <div class="testimonials__title">Marketing Director</div>
+          </div>
+        </div>
+        <div class="testimonials__card">
+          <img src="images/image-thomas.jpg" alt="image-thomas" class="testimonials__image">
+          <p class="testimonials__paragraph">
+            Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable
+            experience.
+          </p>
+          <div class="testimonials__author">
+            <div class="testimonials__name">Thomas S.</div>
+            <div class="testimonials__title">Chief Operating Officer</div>
+          </div>
+        </div>
+        <div class="testimonials__card">
+          <img src="images/image-jennie.jpg" alt="image-jennie" class="testimonials__image">
+          <p class="testimonials__paragraph">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <div class="testimonials__author">
+            <div class="testimonials__name">Jennie F.</div>
+            <div class="testimonials__title">Business Owner</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class="gallery">
+    <img src="images/desktop/image-gallery-milkbottles.jpg" alt="image-gallery-milkbottles" class="gallery_image">
+    <img src="images/desktop/image-gallery-orange.jpg" alt="image-gallery-orange" class="gallery_image">
+    <img src="images/desktop/image-gallery-cone.jpg" alt="image-gallery-cone" class="gallery_image">
+    <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="image-gallery-sugarcubes" class="gallery_image">
+  </section>
+  <footer class="footer">
+    <img src="images/logo.svg" alt="logo" class="footer__logo">
+    <ul class="footer__link_list">
+      <li class="footer__link_list_item">About</div>
+      <li class="footer__link_list_item">Services</div>
+      <li class="footer__link_list_item">Projects</div>
+    </ul>
+    <ul class="footer__icon_list">
+      <li class="footer__icon_list_item"><img src="images/icon-facebook.svg" alt="icon-facebook"></li>
+      <li class="footer__icon_list_item"><img src="images/icon-instagram.svg" alt="icon-instagram"></li>
+      <li class="footer__icon_list_item"><img src="images/icon-twitter.svg" alt="icon-twitter"></li>
+      <li class="footer__icon_list_item"><img src="images/icon-pinterest.svg" alt="icon-pinterest"></li>
+    </ul>
+  </footer>
   <script src="script.js"></script>
 </body>
 

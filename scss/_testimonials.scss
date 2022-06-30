@@ -1,0 +1,114 @@
+@use "colors";
+@use "breakpoints";
+
+.testimonials {
+  height: 780px;
+  background: #fffbf8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoints.sm {
+    height: 1256px;
+    flex-direction: column;
+  }
+
+  .testimonials__container {
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoints.sm {
+      height: 1100px;
+    }
+  }
+
+  .testimonials__heading {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: rgba(colors.$veryDarkGrayishBlue, 0.7);
+    text-align: center;
+  }
+
+  .testimonials__paragraph {
+    color: colors.$veryDarkGrayishBlue;
+    font-size: 17px;
+    line-height: 30px;
+    transform: scale(1, 1.1);
+
+    @include breakpoints.sm {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .testimonials__author {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+
+    @include breakpoints.sm {
+      gap: 15px;
+    }
+  }
+
+  .testimonials__name {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 18px;
+  }
+
+  .testimonials__title {
+    font-size: 15px;
+    color: colors.$grayishBlue;
+  }
+
+  .testimonials__card_row {
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+
+    @include breakpoints.sm {
+      height: 1018px;
+      width: 320px;
+      flex-direction: column;
+      gap: 48px;
+    }
+  }
+
+  .testimonials__card {
+    width: 335px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoints.sm {
+      height: 285px;
+      width: 100%;
+    }
+  }
+
+  .testimonials__image {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+    @include breakpoints.sm {
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  .testimonials__paragraph {
+    text-align: center;
+  }
+}

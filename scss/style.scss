@@ -1,0 +1,15 @@
+@use "reset";
+@use "colors";
+@use "nav";
+@use "header";
+@use "article";
+@use "testimonials";
+@use "gallery";
+@use "footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+:root {
+  font-size: 18px;
+  font-family: "Barlow", san-serif;
+}

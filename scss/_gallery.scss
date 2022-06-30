@@ -1,0 +1,21 @@
+@use "breakpoints";
+
+.gallery {
+  height: 445px;
+  display: flex;
+
+  @include breakpoints.sm {
+    height: 375px;
+    flex-wrap: wrap;
+  }
+
+  .gallery_image {
+    width: 25%;
+    object-fit: cover;
+
+    @include breakpoints.sm {
+      height: 50%;
+      width: 50%;
+    }
+  }
+}

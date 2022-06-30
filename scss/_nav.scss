@@ -1,0 +1,114 @@
+@use "colors";
+@use "breakpoints";
+
+nav {
+  position: absolute;
+  width: 100%;
+  height: 125px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
+
+  @include breakpoints.sm {
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .nav__logo {
+    width: 169px;
+    height: 32px;
+
+    @include breakpoints.sm {
+      width: 124px;
+      height: 26px;
+    }
+  }
+
+  .nav__list {
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: colors.$white;
+
+    @include breakpoints.sm {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      top: 105px;
+      left: 50%;
+      padding-top: 45px;
+      padding-bottom: 45px;
+      background: colors.$white;
+      width: calc(100% - 40px);
+      color: colors.$veryDarkGrayishBlue;
+      height: 300px;
+      font-size: 18px;
+      transform: translate(-50%, 0%) scale(1, 1.1);
+
+      &.open {
+        display: flex;
+      }
+
+      &.open::before {
+        content: "";
+        position: absolute;
+        right: 0px;
+        top: -25px;
+        border-left: 25px solid transparent;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 25px solid colors.$white;
+      }
+    }
+  }
+
+  .nav__list_item:hover {
+    cursor: pointer;
+  }
+
+  .nav__list_item--contact {
+    font-family: "Fraunces", serif;
+    width: 140px;
+    height: 55px;
+    background: colors.$white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: black;
+
+    &:hover {
+      background: rgba(colors.$white, 0.3);
+      color: colors.$white;
+      cursor: pointer;
+    }
+
+    @include breakpoints.sm {
+      background: colors.$yellow;
+      transform: scale(1, 0.9);
+
+      &:hover {
+        background: rgba(colors.$yellow, 0.3);
+        color: colors.$veryDarkDesaturatedBlue;
+      }
+    }
+  }
+
+  .nav__button {
+    background: url("images/icon-hamburger.svg") center no-repeat;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    display: none;
+
+    @include breakpoints.sm {
+      display: block;
+    }
+  }
+}
